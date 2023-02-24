@@ -1,3 +1,7 @@
+/**
+ * class就是将属性和方法放在一起统一管理
+ */
+
 class Person {
   // 指定类型，用=赋初始值
   name: string = "";

@@ -3,7 +3,7 @@ class Animal {
     console.log("移动");
   }
 }
-
+// 子class通过extends 继承父class中的属性和方法
 class Dog extends Animal {
   bark() {
     console.log("汪");

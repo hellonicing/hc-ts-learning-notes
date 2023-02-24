@@ -3,7 +3,7 @@ interface IPerson {
   say(): void;
 }
 
-// class用implements使用接口
+// class通过implements使用接口
 class Student implements IPerson {
   name = "张三";
   say() {
