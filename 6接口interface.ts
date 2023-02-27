@@ -20,7 +20,7 @@ interface IPerson {
   name: string;
   age: number;
 }
-// 4.声明的对象中属性要和interface中一摸一样，不能多也不能少。
+// 4.声明的对象中属性要和interface中一模一样，不能多也不能少。
 let person3: IPerson = {
   name: "臭豆腐",
   age: 23,

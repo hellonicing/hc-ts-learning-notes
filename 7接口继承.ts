@@ -6,6 +6,8 @@ interface Ipoint2D {
 interface Ipoint3D extends Ipoint2D {
   z: number;
 }
+// 接口继承的优点是，当类型存在冲突时，代码会提示报错
+// 而type类型别名，存在类型冲突时会显示为never类型，只有使用时才会报错
 
 let model2D: Ipoint2D = {
   x: 12,
