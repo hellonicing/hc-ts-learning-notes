@@ -28,7 +28,7 @@ let arrM: any[] = [1, "2", false, {}, []];
 // 元组类型
 let arrY: [number, string, boolean, object] = [1, "2", false, {}];
 
-// 联合类型 或   多个类型可选
+// 联合类型 或的意思   多个类型可选
 let arr3: (string | number)[] = [1, 2, "3"];
 let arr4: string | number[] = [99, 100];
 // arr4 = ["12"]; // 报错 赋值了字符串类型的数组，只能赋值数字类型的数组
