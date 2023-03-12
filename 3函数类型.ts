@@ -32,5 +32,28 @@ function fnArg(...arg: number[]) {
   let a: IArguments = arguments;
   console.log(a);
 }
-
 fnArg(2, 4);
+
+// 6.普通函数中使用this
+type Person = {
+  username: string;
+  age: number;
+  sayHii: FnWithThis;
+};
+type FnWithThis = (this: Person, username: string) => void;
+
+// const sayHi: FnWithThis = () => {
+//   console.log("hi" + this.username);
+// };
+const sayHii: FnWithThis = function (name) {
+  console.log("hi" + this.username + name);
+};
+
+const person: Person = {
+  username: "高启强",
+  age: 30,
+  sayHii: sayHii,
+};
+person.sayHii("jack");
+// 等同于
+sayHii.call(person, "jack");

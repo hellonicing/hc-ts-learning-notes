@@ -8,7 +8,7 @@ let arr2: Array<string> = ["广州", "南京"];
 // 3.使用interface定义数组对象
 interface IArrObj {
   name: string;
-  age?: number; // 属性名后问好代表可选
+  age?: number; // 属性名后问号代表可选
 }
 let arrObj: IArrObj[] = [
   {

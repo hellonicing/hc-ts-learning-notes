@@ -24,11 +24,14 @@ interface IB {
   b: boolean;
   c: string;
 }
-// interface IC extends IA {
-//   b: boolean;
-// }
+// interface 在定义时，存在类型冲突会直接报错
+// type 存在类型冲突就会成为never类型，当使用type时才会报错
+interface IC extends IA {
+  b: boolean;
+}
+
 // 交叉类型
-// type TC = IA & IB;
+// type IC = IA & IB;
 
 type TA = {
   a: string;

@@ -1,7 +1,7 @@
 // js中的typeof
-console.log(typeof "武汉");
-console.log(typeof 1);
-console.log(typeof false);
+console.log(typeof "武汉"); // string
+console.log(typeof 1); // number
+console.log(typeof false); // boolean
 
 let d = {
   x: 1,
