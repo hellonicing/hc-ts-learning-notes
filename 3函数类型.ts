@@ -57,3 +57,16 @@ const person: Person = {
 person.sayHii("jack");
 // 等同于
 sayHii.call(person, "jack");
+
+// 7.声明类型时，void表示没有返回值，但return也不报错，但是返回值无法使用
+type Fn = () => void;
+const testFn: Fn = () => {
+  return 1;
+};
+const resFn = testFn();
+console.log(resFn.toFixed(2));
+
+// 但是直接在函数本身限制void则会直接报错
+function testVoid(a: number): void {
+  return 1;
+}

@@ -13,7 +13,7 @@ num1 = 1;
 let res: unknown = fetch("api/name");
 // 例如通过fetch返回的数据类型，目前还不知道是什么类型
 let resName = res as string;
-// 当我们知道返回的一定是string时，通过as断言
+// 当我们知道返回的一定是string时，通过as断言为string
 
 // 3.never类型 一般用于判断是否发生错误
 interface IA {

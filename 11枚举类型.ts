@@ -26,3 +26,9 @@ enum direction2 {
   LEFT,
 }
 console.log(direction2.DOWN); // 6
+
+// 4.使用
+let d: direction = 0;
+console.log(d); // 0
+let dd: direction = direction.RIGHT;
+console.log(dd); // 3

@@ -25,7 +25,7 @@ let people1: nameAndAge = {
 type newPerson = Partial<Person>;
 // 类型反选，将其它都变为可选，gender为必选
 type gender = Partial<Person> & { gender: "男" | "女" };
-let gender: gender = {
+let person: gender = {
   name: "刀哥",
   gender: "男",
 };

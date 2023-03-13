@@ -9,7 +9,6 @@ type PersonType = {
   name: string;
   age: number;
 };
-
 let person2: PersonType = {
   name: "小辣条",
   age: 18,
@@ -29,17 +28,15 @@ let person3: IPerson = {
 // 5.同名interface 会自动合并
 
 // 6.如果返回对象有多个属性，但是自己只需要部分属性
+// ...使用Pick、Omit泛型
+
+// 索引签名 当确定对象中的内容都是固定的，使用索引签名
 interface ITestData {
-  name: string;
-  data: [];
   // 索引签名
-  [foo: string]: any; // 这里是忽略其他属性
+  [alphabet: string]: number; // 这里是忽略其他属性
 }
 
-let resData = {
-  name: "卫龙",
-  age: 20,
-  // abc不会被校验
+let resData: ITestData = {
   a: 1,
   b: 2,
   c: 3,
